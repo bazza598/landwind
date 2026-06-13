@@ -1,0 +1,14 @@
+# Core Hugging Face stack for downloading and running an LLM locally.
+# Install with: pip install -r llm/requirements.txt
+#
+# torch: pick the build that matches your hardware. The line below installs the
+# default CPU/GPU wheel from PyPI. For a specific CUDA build, see
+# https://pytorch.org/get-started/locally/ and install torch separately first.
+torch>=2.2
+transformers>=4.44
+huggingface-hub>=0.24
+accelerate>=0.33
+# Optional: faster tokenization and 4-bit/8-bit quantized loading on CUDA GPUs.
+# Uncomment if you have an NVIDIA GPU and want lower memory usage.
+# bitsandbytes>=0.43
+sentencepiece>=0.2
